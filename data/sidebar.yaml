@@ -1,0 +1,50 @@
+profile:
+  name: "Tim Veluwenkamp"
+  title: Support Engineer
+  avatar: "images/me.webp"
+  description: Turning complex issues into simple, reliable solutions. Automating, documenting, and fine-tuning Linux systems.
+  links:
+    - icon: linkedin
+      label: linkedin.com/in/timvnl
+      url: https://www.linkedin.com/in/timvnl
+    - icon: github
+      label: github.com/timvnl
+      url: https://github.com/timvnl
+
+sections:
+  - id: profile-stats
+    type: stats
+    title: Profile Stats
+    items:
+      - label: Role
+        value: Support Engineer
+        accent: cyan
+      - label: Focus
+        value: Linux & Automation
+        accent: emerald
+      - label: Incident comms
+        value: first alert → all-clear
+        accent: purple
+      - label: Zero-days survived
+        value: "3 in '26"
+        accent: amber
+      - label: Outages caused
+        value: "1 (late night)"
+        accent: emerald
+      - label: Load average
+        value: coffee, coffee, coffee
+        accent: amber
+  - id: skills
+    type: tags
+    title: Things I'm quite good at
+    items:
+      - Linux
+      - Bash
+      - Ansible
+      - Docker
+      - Nginx
+      - MySQL
+      - Hypernode
+      - WordPress
+    footer: "> type 'skills' for the full stack"
+

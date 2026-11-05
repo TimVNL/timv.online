@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section class="nerdy-page-surface nerdy-page-surface--home">
+  <div class="nerdy-container pt-16 lg:pt-20 pb-16">
+    <div class="mx-auto max-w-2xl text-center font-mono">
+      <p class="text-sm nerdy-muted-soft">guest@timv.online:~$ <span class="text-slate-900 dark:text-slate-100">open {{ .Permalink }}</span></p>
+      <h1 class="mt-6 text-5xl font-bold tracking-tight text-accent-cyan">404</h1>
+      <p class="mt-3 text-sm nerdy-muted-soft">bash: open: {{ .Permalink }}: No such file or directory</p>
+      <a class="nerdy-link mt-8 inline-block text-sm" href="{{ "" | relURL }}">cd ~</a>
+    </div>
+  </div>
+</section>
+{{ end }}

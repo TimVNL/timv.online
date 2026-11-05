@@ -1,0 +1,141 @@
+id: featured-projects
+type: projects
+icon: code
+title: Projects
+items:
+  - title: hypernode-botstopper-policies
+    role: Ongoing · Maintainer
+    description: Drop-in policies for Hypernode's BotStopper — keep the bots out, let the humans in.
+    tech:
+      - YAML
+      - Hypernode
+    accent: emerald
+    type: Open Source
+    links:
+      - label: Code
+        url: https://github.com/TimVNL/hypernode-botstopper-policies
+        icon: github
+      - label: Hypernode Docs
+        url: https://docs.hypernode.com/hypernode-platform/botstopper/how-to-use-botstopper.html
+        icon: document
+    stars: 1
+  - title: nix-darwin
+    role: Ongoing · Maintainer
+    description: Minimal nix-darwin setup for macOS — safe to deploy on a fresh install.
+    tech:
+      - Nix
+      - macOS
+    accent: emerald
+    type: Open Source
+    links:
+      - label: Code
+        url: https://github.com/TimVNL/nix-darwin
+        icon: github
+  - title: traefik-sample
+    role: 2025
+    description: Simple Traefik setup with wildcard certificate support.
+    tech:
+      - Traefik
+    accent: emerald
+    type: Open Source
+    links:
+      - label: Code
+        url: https://github.com/TimVNL/traefik-sample
+        icon: github
+  - title: bash-scripts
+    role: Ongoing · Maintainer
+    description: Bash scripts for the daily sysadmin grind.
+    tech:
+      - Bash
+    accent: emerald
+    type: Open Source
+    stars: 1
+    links:
+      - label: Code
+        url: https://github.com/TimVNL/bash-scripts
+        icon: github
+  - title: dirbak
+    role: 2017–2018
+    description: Uses cron, OpenSSL, rsync, and tar to make daily backups.
+    tech:
+      - Bash
+      - rsync
+    accent: emerald
+    type: Open Source
+    links:
+      - label: Code
+        url: https://github.com/TimVNL/dirbak
+        icon: github
+  - title: RocaNLD
+    role: Ongoing · Webmaster
+    description: WordPress site I built for my mom's hobby — painted stones traveling the world. Did you find one?
+    tech:
+      - WordPress
+      - Hypernode Hosted
+    accent: cyan
+    type: Websites
+    links:
+      - label: Visit
+        url: https://www.rocanld.com/
+        icon: website
+  - title: MTC Dalfsen
+    role: Ongoing · Webmaster
+    description: WordPress site for the local motor club MTC Dalfsen — day and multi-day motorcycle tours since 1987.
+    tech:
+      - WordPress
+    accent: cyan
+    type: Websites
+    links:
+      - label: Visit
+        url: https://mtcdalfsen.nl/
+        icon: website
+  - title: Arnhemse Antilope
+    role: Ongoing · Webmaster
+    description: Website for my manual wheelchair hockey club, the Arnhemse Antilope.
+    tech:
+      - WordPress
+      - Hypernode Hosted
+    accent: cyan
+    type: Websites
+    links:
+      - label: Visit
+        url: https://www.arnhemseantilope.nl/
+        icon: website
+  - title: CloudFabrik VTC
+    role: Ongoing
+    description: My virtual trucking company on TruckyApp.
+    accent: emerald
+    type: Miscellaneous
+    links:
+      - label: TruckyHub
+        url: https://hub.truckyapp.com/company/23848
+        icon: external
+  - title: NoXqs Client Work
+    role: Programmer & System Administrator · 2011–2017
+    description: Client web projects at NoXqs B.V. (2011–2017) — development plus the systems behind them.
+    accent: purple
+    type: NoXqs
+  - title: Codename Lungo
+    description: Stripped-down Android ROM based on CyanogenMod and LineageOS, assembled by an automated Bash build script.
+    tech:
+      - Android
+      - Bash
+    accent: purple
+    type: Android ROM
+    links:
+      - label: Build script
+        url: https://github.com/TimVNL/CodenameLungo-build
+        icon: github
+      - label: Site code
+        url: https://github.com/TimVNL/CodenameLungo-website
+        icon: github
+  - title: Begrijpelijke Communicatie
+    description: Website for the Netwerk Begrijpelijke Communicatie — plain-language communication in Dutch disability care.
+    tech:
+      - WordPress
+    accent: cyan
+    type: Websites
+    links:
+      - label: Visit
+        url: https://begrijpelijkecommunicatie.nl/
+        icon: website
