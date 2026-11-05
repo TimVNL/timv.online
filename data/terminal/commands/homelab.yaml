@@ -1,0 +1,23 @@
+name: homelab
+label: Homelab
+description: docker ps, but at home
+quick: false
+weight: 61
+host:
+  os: Unraid
+  uptime: ""    # e.g. "87 days" — leave empty to hide
+  network: everything through pangolin · 0 ports exposed
+services:
+  # Edit with your real containers.
+  - name: adguard
+    image: adguard/adguardhome
+    status: Up (healthy)
+  - name: homeassistant
+    image: home-assistant
+    status: Up (healthy)
+  - name: jellyfin
+    image: jellyfin/jellyfin
+    status: Up
+  - name: ets2-server
+    image: ets2-dedicated
+    status: Up
