@@ -1,0 +1,14 @@
+name: contact
+label: Contact
+description: How to reach me
+quick: true
+weight: 50
+intro: My inbox is always open — whether you have a question or just want to say hi, I'll do my best to get back to you.
+links:
+  - label: LinkedIn
+    text: linkedin.com/in/timvnl
+    url: https://www.linkedin.com/in/timvnl
+  - label: GitHub
+    text: github.com/timvnl
+    url: https://github.com/timvnl
+outro: Drop me a line or run the commands above to explore more.

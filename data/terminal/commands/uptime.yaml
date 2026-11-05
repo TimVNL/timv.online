@@ -1,0 +1,5 @@
+name: uptime
+label: Uptime
+description: How long have I been up
+quick: false
+weight: 60

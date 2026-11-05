@@ -1,0 +1,5 @@
+name: cowsay
+label: Cowsay
+description: Wisdom from the cow
+quick: false
+weight: 69

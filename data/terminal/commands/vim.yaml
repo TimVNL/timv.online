@@ -1,0 +1,5 @@
+name: vim
+label: Vim
+description: You know what happens
+quick: false
+weight: 81

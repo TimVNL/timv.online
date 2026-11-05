@@ -1,0 +1,5 @@
+name: coffee
+label: Coffee
+description: Brew a fresh cup
+quick: false
+weight: 66

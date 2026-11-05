@@ -1,0 +1,12 @@
+name: boot
+label: Boot
+description: Boot sequence
+quick: false
+weight: 70
+lines:
+  - "[    0.000000] Loading support_engineer.ko ... OK"
+  - "[    0.213456] Mounting /portfolio ... OK"
+  - "[    0.424242] Starting coffee-daemon ... OK"
+  - "[    0.666001] Connecting to hypernode ... OK"
+  - "[    0.808080] Tuning kernel.van.truckiness = 1 ... OK"
+  - "[    1.020030] Boot complete."

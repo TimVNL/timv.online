@@ -1,0 +1,5 @@
+name: neofetch
+label: Neofetch
+description: System info, but about me
+quick: false
+weight: 65

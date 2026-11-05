@@ -1,0 +1,10 @@
+name: intro
+label: Intro
+description: Quick introduction
+quick: true
+weight: 5
+person_name: "Tim Veluwenkamp"
+role: a Support Engineer who turns complex issues into simple, reliable solutions.
+details:
+  - I automate, document, and fine-tune Linux systems so they stay smooth, secure, and scalable.
+  - Off-hours, I unwind with Euro Truck Simulator and the occasional coffee-fueled code experiment.

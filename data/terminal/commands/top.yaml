@@ -1,0 +1,5 @@
+name: top
+label: Top
+description: Running processes
+quick: false
+weight: 68

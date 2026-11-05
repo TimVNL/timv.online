@@ -1,0 +1,64 @@
+name: skills
+label: Skills
+description: My technical stack
+quick: true
+weight: 20
+categories:
+  - key: linux_infrastructure
+    items:
+      - Linux (Desktop & Server)
+      - Bash
+      - Ansible
+      - Docker
+      - Unraid
+      - Nginx
+      - Varnish
+      - Redis
+      - MySQL
+      - Nix
+      - Traefik
+      - Pangolin
+      - Hypernode
+      - Home Assistant
+      - pfSense
+      - Ubiquiti UniFi
+      - Raspberry Pi
+  - key: web
+    items:
+      - WordPress
+      - Magento
+      - PHP
+      - HTML5
+      - CSS
+      - Sass
+      - JavaScript
+      - Bootstrap
+  - key: ai_automation
+    items:
+      - AI Support Copilot (OpenCode)
+      - Prompt Engineering
+  - key: security
+    items:
+      - Incident Response
+      - Incident Communication
+      - Web Application Firewalls (WAF)
+      - Malware Cleanup
+      - eComscan
+  - key: tools
+    items:
+      - Git
+      - Freshdesk
+      - Jira
+      - Slack
+      - DirectAdmin
+      - SupportPal
+      - TeamViewer
+      - Microsoft Office Suite
+      - Adobe Photoshop
+  - key: support_hardware
+    items:
+      - Helpdesk (on location & remote)
+      - PC (dis)assembly
+      - Windows
+      - macOS
+      - Android

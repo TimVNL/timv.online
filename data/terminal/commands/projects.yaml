@@ -1,0 +1,94 @@
+name: projects
+label: Projects
+description: View my portfolio projects
+quick: true
+weight: 40
+items:
+  - name: hypernode-botstopper-policies
+    type: Open Source
+    role: Ongoing · Maintainer
+    tech:
+      - YAML
+      - Hypernode
+    description: Drop-in policies for Hypernode's BotStopper — keep the bots out, let the humans in.
+    url: https://github.com/TimVNL/hypernode-botstopper-policies
+  - name: nix-darwin
+    type: Open Source
+    role: Ongoing · Maintainer
+    tech:
+      - Nix
+      - macOS
+    description: Minimal nix-darwin setup for macOS — safe to deploy on a fresh install.
+    url: https://github.com/TimVNL/nix-darwin
+  - name: traefik-sample
+    type: Open Source
+    role: 2025
+    tech:
+      - Traefik
+    description: Simple Traefik setup with wildcard certificate support.
+    url: https://github.com/TimVNL/traefik-sample
+  - name: bash-scripts
+    type: Open Source
+    role: Ongoing · Maintainer
+    tech:
+      - Bash
+    description: Bash scripts for the daily sysadmin grind.
+    url: https://github.com/TimVNL/bash-scripts
+  - name: dirbak
+    type: Open Source
+    role: 2017–2018
+    tech:
+      - Bash
+      - rsync
+    description: Uses cron, OpenSSL, rsync, and tar to make daily backups.
+    url: https://github.com/TimVNL/dirbak
+  - name: RocaNLD
+    type: Miscellaneous
+    role: Ongoing · Webmaster
+    tech:
+      - WordPress
+      - Hypernode
+    description: WordPress site I built for my mom's hobby — painted stones traveling the world.
+    url: https://www.rocanld.com/
+  - name: MTC Dalfsen
+    role: Ongoing · Webmaster
+    type: Websites
+    tech:
+      - WordPress
+    description: WordPress site for the local motor club in Dalfsen — motorcycle tours since 1987.
+    url: https://mtcdalfsen.nl/
+  - name: Arnhemse Antilope
+    role: Ongoing · Webmaster
+    type: Websites
+    tech:
+      - WordPress
+      - Hypernode
+    description: Website for my manual wheelchair hockey club, the Arnhemse Antilope.
+    url: https://www.arnhemseantilope.nl/
+  - name: CloudFabrik VTC
+    type: Miscellaneous
+    role: Ongoing
+    tech:
+      - TruckyApp
+    description: My virtual trucking company on TruckyApp.
+    url: https://hub.truckyapp.com/company/23848
+  - name: NoXqs Client Work
+    type: NoXqs
+    role: Programmer & System Administrator · 2011–2017
+    tech:
+      - Web
+      - SysAdmin
+    description: Eleven client projects — Apple4Ever, Bakker Legal, Droomvilla Lux, Flitzenzo, iMac Installer, iNever Mee, NoXqs 2014, ROC, SAG, Stefka, TimZorg.
+  - name: Codename Lungo
+    type: Android ROM
+    tech:
+      - Android
+      - Bash
+    description: Stripped-down Android ROM based on CyanogenMod and LineageOS, assembled by an automated Bash build script.
+    url: https://github.com/TimVNL/CodenameLungo-build
+  - name: Begrijpelijke Communicatie
+    type: Websites
+    tech:
+      - WordPress
+    description: Website for the Netwerk Begrijpelijke Communicatie.
+    url: https://begrijpelijkecommunicatie.nl/

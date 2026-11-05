@@ -1,0 +1,38 @@
+name: experience
+label: Experience
+description: Professional work history
+quick: true
+weight: 30
+roles:
+  - title: Support Engineer
+    company: Hypernode B.V. (team.blue), Arnhem
+    period: Sep 2025 - Present
+    highlights:
+      - Support for Hypernode, a leading e-commerce hosting platform (team.blue).
+      - Zero-day incident response with the Hypernode team — StyleSmuggler (CVE-2026-75650), PHP2Shell (CVE-2026-109618/109619), APSB26-92.
+      - CVE incident communication to merchants, developers, and agencies — from first alert to all-clear, together with the support team.
+  - title: Linux Engineer
+    company: Proserve (team.blue), Arnhem
+    period: Apr 2024 - Sep 2025
+  - title: Linux Engineer
+    company: iXL Hosting B.V. (team.blue), Ede
+    period: Aug 2022 - Apr 2024
+  - title: Technical Support Engineer
+    company: iXL Hosting B.V. (team.blue), Ede
+    period: Mar 2018 - Aug 2022
+  - title: Jr. Investigator
+    company: ML Compliance Services B.V., Arnhem
+    period: Nov 2017 - Jan 2018
+  - title: Helpdesk
+    company: MASC ICT B.V., Nijmegen
+    period: Nov 2015 - Sep 2016
+  - title: Programmer and System Administrator
+    company: NoXqs B.V., Elst (gld)
+    period: Oct 2011 - Aug 2017
+  - title: ICT Support Roles
+    company: De Onderwijsspecialisten, Arnhem
+    period: 2008 - Sep 2010
+    highlights:
+      - ICT Coördinator Assistant
+      - Computer Advies Team
+      - Helpdesk Cooperator

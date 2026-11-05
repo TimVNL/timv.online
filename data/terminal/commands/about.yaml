@@ -1,0 +1,16 @@
+name: about
+label: About
+description: Information about me
+quick: true
+weight: 10
+greeting: Hello, World!
+person_name: "Tim Veluwenkamp"
+summary: I've been passionate about creating and improving things for as long as I can remember.
+details:
+  - My tech journey started at 11 when I built my first website using Microsoft FrontPage.
+  - Since then, I've evolved from IT Assistant and Programmer to a Support Engineer for a leading e-commerce hosting company.
+  - Every day, I bring a smile to problem-solving, ensuring clients get the best solutions for their hosting needs.
+  - Colleagues would add punctuality, social skills and adaptability to that list.
+quote:
+  text: Talk is cheap. Show me the code.
+  author: Linus Torvalds

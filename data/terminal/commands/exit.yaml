@@ -1,0 +1,5 @@
+name: exit
+label: Exit
+description: Try to leave
+quick: false
+weight: 80

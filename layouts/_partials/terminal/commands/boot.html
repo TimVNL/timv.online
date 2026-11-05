@@ -1,0 +1,16 @@
+<div class="font-mono text-xs leading-6">
+  {{ $intro := site.Data.terminal.commands.intro }}
+  {{ $bootLines := .lines }}
+  {{ $total := add (len $bootLines) 2 }}
+  {{ range $i, $line := $bootLines }}
+    {{ $delay := printf "%.2f" (add 0.15 (mul $i 0.18)) }}
+    <div class="boot-line nerdy-muted-soft" style="animation-delay: {{ $delay }}s">{{ $line | replaceRE "OK$" "<span class=\"text-accent-emerald font-bold\">OK</span>" | safeHTML }}</div>
+  {{ end }}
+  {{ $delayIntro := printf "%.2f" (add 0.15 (mul $total 0.18)) }}
+  <div class="boot-line mt-3" style="animation-delay: {{ $delayIntro }}s">
+    <p>Hi, I'm <span class="font-bold text-accent-emerald">{{ $intro.person_name }}</span> — {{ $intro.role }}</p>
+    {{ range $intro.details }}
+      <p>{{ . }}</p>
+    {{ end }}
+  </div>
+</div>

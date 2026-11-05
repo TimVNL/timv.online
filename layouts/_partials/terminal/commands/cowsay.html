@@ -1,0 +1,10 @@
+{{ $quote := site.Data.terminal.commands.about.quote }}
+{{ $text := $quote.text }}
+{{ $w := len $text }}{{ $dash := strings.Repeat $w "-" }}{{ $pad := strings.Repeat $w " " }}<pre class="font-mono whitespace-pre-wrap leading-relaxed"> <span class="text-accent-purple">{{ $dash }}</span>
+&lt; <span class="italic">{{ $text }}</span> &gt;
+ <span class="text-accent-purple">{{ $dash }}</span>
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||</pre>
