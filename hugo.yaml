@@ -1,0 +1,58 @@
+baseURL: "https://www.timv.online/"
+locale: en-us
+title: "Tim Veluwenkamp"
+enableRobotsTXT: true
+disableKinds:
+  - taxonomy
+  - term
+
+params:
+  description: "Support Engineer who turns complex issues into simple, reliable solutions. I automate, document, and fine-tune Linux systems so they stay smooth, secure, and scalable."
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+  goldmark:
+    renderer:
+      unsafe: true
+
+minify:
+  minifyOutput: true
+
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: 'assets/notwatching/hugo_stats\.json'
+      target: css
+    - source: '(postcss|tailwind)\.config\.(js|mjs|ts)'
+      target: css
+
+theme: nerdy
+
+security:
+  exec:
+    allow:
+      - '^dart-sass-embedded$'
+      - '^go$'
+      - '^gofmt$'
+      - '^npx$'
+      - '^postcss$'
+      - '^tailwindcss'
+      - 'tailwindcss$'
+      - '^node$'
+
+module:
+  mounts:
+    - source: content
+      target: content
+    - source: data
+      target: data
+    - source: assets
+      target: assets
+    - source: static
+      target: static
+    - disableWatch: true
+      source: hugo_stats.json
+      target: assets/notwatching/hugo_stats.json
