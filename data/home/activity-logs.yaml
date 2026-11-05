@@ -1,0 +1,50 @@
+id: activity-logs
+type: activity
+icon: clock
+title: Activity Log
+activityLimit: 10
+lookbackDays: 730
+includePosts: false
+items:
+  - activityDate: 2026-10-21
+    type: event
+    info:
+      label: PHP2Shell emergency patch window
+      url: https://www.linkedin.com/posts/hypernodecom_hypernode-php-security-activity-7518650410295803904-nBeR
+      text: together with the support team, kept merchants, developers, and agencies informed from emergency announcement to all-clear as the platform patched two critical PHP RCEs (CVE-2026-109618/109619) overnight
+  - activityDate: 2026-09-08
+    type: event
+    info:
+      label: StyleSmuggler follow-up
+      url: https://www.linkedin.com/posts/hypernodecom_magento-adobecommerce-ecommerce-activity-7503087476203249665-FYBj
+      text: guided merchants, developers, and agencies through Adobe's official patch (APSB26-146 / VULN-39341), key rotation, and store verification — closing out every thread from the weekend
+  - activityDate: 2026-09-05
+    type: event
+    info:
+      label: StyleSmuggler zero-day response
+      url: https://www.linkedin.com/posts/hypernodecom_magento-adobecommerce-securityalert-activity-7502016918892224513-j8kJ
+      text: wrote the first alerts to merchants, developers, and agencies as the WAF rollout and compromised store cleanups began during active exploitation of CVE-2026-75650
+  - activityDate: 2026-08-20
+    type: event
+    info:
+      label: Veluwe team outing
+      url: https://www.linkedin.com/posts/hypernodecom_yesterday-the-hypernode-team-traded-our-activity-7496513692415574016-H551
+      text: traded screens for the great outdoors with the team — fresh air, healthy competition, and a warm welcome for our newest colleague
+  - activityDate: 2026-08-14
+    type: event
+    info:
+      label: Adobe Commerce account-takeover block
+      url: https://changelog.hypernode.com/release-10921-adobe-commerce-account-takeover-block/
+      text: platform-wide block for CVE-2026-71362 (APSB26-92) shipped within days of Adobe's bulletin — took the patch-first guidance straight to affected merchants, developers, and agencies
+  - activityDate: 2026-02-06
+    type: event
+    info:
+      label: Datacenter tour
+      url: https://www.linkedin.com/posts/timvnl_activity-7427677204316172288-jsTx
+      text: up close with the hardware behind the platform, plus the 2026 strategy session — and the first photo of the complete Support Team
+  - activityDate: 2025-11-27
+    type: event
+    info:
+      label: Black Friday ops night
+      url: https://www.linkedin.com/posts/timvnl_activity-7399807897083322368-JJOn
+      text: all hands on deck at the Arnhem office — tech, dev, and support monitoring server load through the night, fueled by pizza

@@ -1,0 +1,9 @@
+{{- $info := .info | default dict -}}
+{{- $label := $info.label | default "Event" -}}
+{{- if $info.url -}}
+<a class="nerdy-link" href="{{ $info.url }}">{{ $label }}</a>
+{{- else -}}
+{{ $label }}
+{{- end -}}
+{{- with $info.text }} — {{ . }}{{ end -}}
+.
