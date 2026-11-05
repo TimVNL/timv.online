@@ -17,7 +17,7 @@ items:
     info:
       label: StyleSmuggler follow-up
       url: https://www.linkedin.com/posts/hypernodecom_magento-adobecommerce-ecommerce-activity-7503087476203249665-FYBj
-      text: guided merchants, developers, and agencies through Adobe's official patch (APSB26-146 / VULN-39341), key rotation, and store verification — closing out every thread from the weekend
+      text: guided merchants, developers, and agencies through Adobe's official patch (APSB26-146 / VULN-39341), key rotation, and store verification, closing out every thread from the weekend
   - activityDate: 2026-09-05
     type: event
     info:
@@ -29,22 +29,22 @@ items:
     info:
       label: Veluwe team outing
       url: https://www.linkedin.com/posts/hypernodecom_yesterday-the-hypernode-team-traded-our-activity-7496513692415574016-H551
-      text: traded screens for the great outdoors with the team — fresh air, healthy competition, and a warm welcome for our newest colleague
+      text: traded screens for the great outdoors with the team for fresh air, healthy competition, and a warm welcome for our newest colleague
   - activityDate: 2026-08-14
     type: event
     info:
       label: Adobe Commerce account-takeover block
       url: https://changelog.hypernode.com/release-10921-adobe-commerce-account-takeover-block/
-      text: platform-wide block for CVE-2026-71362 (APSB26-92) shipped within days of Adobe's bulletin — took the patch-first guidance straight to affected merchants, developers, and agencies
+      text: platform-wide block for CVE-2026-71362 (APSB26-92) shipped within days of Adobe's bulletin, took the patch-first guidance straight to affected merchants, developers, and agencies
   - activityDate: 2026-02-06
     type: event
     info:
       label: Datacenter tour
       url: https://www.linkedin.com/posts/timvnl_activity-7427677204316172288-jsTx
-      text: up close with the hardware behind the platform, plus the 2026 strategy session — and the first photo of the complete Support Team
+      text: up close with the hardware behind the platform, plus the 2026 strategy session, and the first photo of the complete Support Team
   - activityDate: 2025-11-27
     type: event
     info:
       label: Black Friday ops night
       url: https://www.linkedin.com/posts/timvnl_activity-7399807897083322368-JJOn
-      text: all hands on deck at the Arnhem office — tech, dev, and support monitoring server load through the night, fueled by pizza
+      text: all hands on deck at the Arnhem office, with tech, dev, and support monitoring server load through the night, fueled by pizza

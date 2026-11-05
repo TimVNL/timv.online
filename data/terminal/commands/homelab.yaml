@@ -5,7 +5,7 @@ quick: false
 weight: 61
 host:
   os: Unraid
-  uptime: ""    # e.g. "87 days" — leave empty to hide
+  uptime: ""    # e.g. "87 days", leave empty to hide
   network: everything through pangolin · 0 ports exposed
 services:
   # Edit with your real containers.

@@ -4,8 +4,8 @@
 
 <span class="nerdy-muted-soft">CONTAINER            IMAGE                STATUS            PORTS</span>
 {{- range $services }}
-<span class="font-bold">{{ printf "%-20s" .name }}</span><span class="nerdy-muted">{{ printf "%-20s" .image }}</span><span class="text-accent-emerald">{{ printf "%-17s" .status }}</span><span class="nerdy-muted-soft">{{ with .ports }}{{ . }}{{ else }}—{{ end }}</span>
+<span class="font-bold">{{ printf "%-20s" .name }}</span><span class="nerdy-muted">{{ printf "%-20s" .image }}</span><span class="text-accent-emerald">{{ printf "%-17s" .status }}</span><span class="nerdy-muted-soft">{{ with .ports }}{{ . }}{{ else }}-{{ end }}</span>
 {{- end }}
 {{- with $host }}
 {{ .os }} · {{ len $services }} containers{{ with .uptime }} · up {{ . }}{{ end }}{{ with .network }} · {{ . }}{{ end }}{{ end }}
-— <span class="text-accent-amber">self-imposed outages: inevitable</span></pre>
+<span class="text-accent-amber">self-imposed outages: inevitable</span></pre>

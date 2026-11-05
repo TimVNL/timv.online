@@ -5,7 +5,7 @@ title: Projects
 items:
   - title: hypernode-botstopper-policies
     role: Ongoing · Maintainer
-    description: Drop-in policies for Hypernode's BotStopper — keep the bots out, let the humans in.
+    description: "Drop-in policies for Hypernode's BotStopper: keep the bots out, let the humans in."
     tech:
       - YAML
       - Hypernode
@@ -21,7 +21,7 @@ items:
     stars: 1
   - title: nix-darwin
     role: Ongoing · Maintainer
-    description: Minimal nix-darwin setup for macOS — safe to deploy on a fresh install.
+    description: Minimal nix-darwin setup for macOS, safe to deploy on a fresh install.
     tech:
       - Nix
       - macOS
@@ -68,7 +68,7 @@ items:
         icon: github
   - title: RocaNLD
     role: Ongoing · Webmaster
-    description: WordPress site I built for my mom's hobby — painted stones traveling the world. Did you find one?
+    description: "WordPress site I built for my mom's hobby: painted stones traveling the world. Did you find one?"
     tech:
       - WordPress
       - Hypernode Hosted
@@ -80,7 +80,7 @@ items:
         icon: website
   - title: MTC Dalfsen
     role: Ongoing · Webmaster
-    description: WordPress site for the local motor club MTC Dalfsen — day and multi-day motorcycle tours since 1987.
+    description: WordPress site for the local motor club MTC Dalfsen, day and multi-day motorcycle tours since 1987.
     tech:
       - WordPress
     accent: cyan
@@ -112,7 +112,7 @@ items:
         icon: external
   - title: NoXqs Client Work
     role: Programmer & System Administrator · 2011–2017
-    description: Client web projects at NoXqs B.V. (2011–2017) — development plus the systems behind them.
+    description: Client web projects at NoXqs B.V. (2011–2017), development plus the systems behind them.
     accent: purple
     type: NoXqs
   - title: Codename Lungo
@@ -130,7 +130,7 @@ items:
         url: https://github.com/TimVNL/CodenameLungo-website
         icon: github
   - title: Begrijpelijke Communicatie
-    description: Website for the Netwerk Begrijpelijke Communicatie — plain-language communication in Dutch disability care.
+    description: Website for the Netwerk Begrijpelijke Communicatie, plain-language communication in Dutch disability care.
     tech:
       - WordPress
     accent: cyan

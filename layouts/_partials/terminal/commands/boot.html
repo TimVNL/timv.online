@@ -8,7 +8,7 @@
   {{ end }}
   {{ $delayIntro := printf "%.2f" (add 0.15 (mul $total 0.18)) }}
   <div class="boot-line mt-3" style="animation-delay: {{ $delayIntro }}s">
-    <p>Hi, I'm <span class="font-bold text-accent-emerald">{{ $intro.person_name }}</span> — {{ $intro.role }}</p>
+    <p>Hi, I'm <span class="font-bold text-accent-emerald">{{ $intro.person_name }}</span>, {{ $intro.role }}</p>
     {{ range $intro.details }}
       <p>{{ . }}</p>
     {{ end }}

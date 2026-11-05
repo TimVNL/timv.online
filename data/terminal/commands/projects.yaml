@@ -10,7 +10,7 @@ items:
     tech:
       - YAML
       - Hypernode
-    description: Drop-in policies for Hypernode's BotStopper — keep the bots out, let the humans in.
+    description: "Drop-in policies for Hypernode's BotStopper: keep the bots out, let the humans in."
     url: https://github.com/TimVNL/hypernode-botstopper-policies
   - name: nix-darwin
     type: Open Source
@@ -18,7 +18,7 @@ items:
     tech:
       - Nix
       - macOS
-    description: Minimal nix-darwin setup for macOS — safe to deploy on a fresh install.
+    description: Minimal nix-darwin setup for macOS, safe to deploy on a fresh install.
     url: https://github.com/TimVNL/nix-darwin
   - name: traefik-sample
     type: Open Source
@@ -48,14 +48,14 @@ items:
     tech:
       - WordPress
       - Hypernode
-    description: WordPress site I built for my mom's hobby — painted stones traveling the world.
+    description: "WordPress site I built for my mom's hobby: painted stones traveling the world."
     url: https://www.rocanld.com/
   - name: MTC Dalfsen
     role: Ongoing · Webmaster
     type: Websites
     tech:
       - WordPress
-    description: WordPress site for the local motor club in Dalfsen — motorcycle tours since 1987.
+    description: WordPress site for the local motor club in Dalfsen, motorcycle tours since 1987.
     url: https://mtcdalfsen.nl/
   - name: Arnhemse Antilope
     role: Ongoing · Webmaster
@@ -78,7 +78,7 @@ items:
     tech:
       - Web
       - SysAdmin
-    description: Eleven client projects — Apple4Ever, Bakker Legal, Droomvilla Lux, Flitzenzo, iMac Installer, iNever Mee, NoXqs 2014, ROC, SAG, Stefka, TimZorg.
+    description: "Eleven client projects: Apple4Ever, Bakker Legal, Droomvilla Lux, Flitzenzo, iMac Installer, iNever Mee, NoXqs 2014, ROC, SAG, Stefka, TimZorg."
   - name: Codename Lungo
     type: Android ROM
     tech:
