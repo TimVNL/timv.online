@@ -1,0 +1,14 @@
+{{- $profile := .profile | default dict -}}
+{{- $stats := .stats | default dict -}}
+{{- $favorites := .favorites | default slice -}}
+{{- $user := $profile.user | default "timvnl" -}}
+{{- $url := $profile.url | default "https://trakt.tv/users/timvnl" -}}
+<pre class="font-mono whitespace-pre-wrap leading-relaxed"><span class="text-accent-cyan font-bold">trakt</span> <span class="nerdy-muted-soft">--stats --user</span> <a class="pointer-events-auto relative z-50 nerdy-link underline" href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ $user }}</a>
+
+  <span class="text-accent-purple">movies</span>    {{ $stats.movies | default 0 }}
+  <span class="text-accent-purple">shows</span>     {{ $stats.shows | default 0 }}
+  <span class="text-accent-purple">episodes</span>  {{ $stats.episodes | default 0 }}{{ with $stats.watchtime }}
+  <span class="text-accent-purple">watchtime</span> <span class="text-accent-amber">{{ . }}</span>{{ end }}{{ with $profile.vip_since }}
+  <span class="text-accent-emerald">vip</span>       <span class="text-accent-emerald">since {{ . }}</span>{{ end }}{{ with $favorites }}
+  <span class="nerdy-muted-soft">top picks</span>   {{ delimit . ", " }}{{ end }}
+  <span class="text-accent-emerald font-bold">status: watching</span></pre>

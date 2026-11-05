@@ -1,0 +1,15 @@
+name: trakt
+label: Trakt
+description: TV and movie tracking stats
+quick: false
+weight: 72
+profile:
+  user: timvnl
+  url: https://trakt.tv/users/timvnl
+  vip_since: ""    # e.g. "March 2019" — leave empty to hide
+stats:
+  movies: 0       # e.g. 142
+  shows: 0         # e.g. 37
+  episodes: 0      # e.g. 1942
+  watchtime: ""    # e.g. "2 months, 14 days" — leave empty to hide
+favorites: []     # e.g. [The Expanse, Star Trek: TNG, Interstellar]
