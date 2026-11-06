@@ -2,6 +2,10 @@
   "name": "timv-hugo",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "dev": "hugo server",
+    "build": "hugo --gc --minify"
+  },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
     "alpinejs": "^3.15.12"

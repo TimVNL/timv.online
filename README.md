@@ -16,10 +16,10 @@ Built with Hugo and the [nerdy](https://github.com/hugo-themes/nerdy) theme. The
 git clone --recurse-submodules https://github.com/TimVNL/timv.online.git
 cd timv.online
 npm install
-hugo server
+npm run dev
 ```
 
-Production build: `hugo --gc --minify`
+Production build: `npm run build`
 
 ## How the site is put together
 
@@ -39,3 +39,7 @@ Pushing to `main` triggers the Deploy workflow, which runs `deploy/publish.sh`. 
 Server details are not in this repository. They live in GitHub secrets and in `deploy/config.sh`, which is gitignored.
 
 Pull requests get a build check before merge. See [AGENTS.md](AGENTS.md) for the rules that apply to this repository, including the writing style.
+
+## License
+
+The code and configuration in this repository are MIT licensed, see [LICENSE](LICENSE). The site content in `data/`, `content/`, and `assets/images/` is Tim's and is not licensed for reuse.

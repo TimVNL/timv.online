@@ -22,8 +22,22 @@
   <meta name="twitter:image:alt" content="{{ site.Title }}">
 {{ end }}
 <link rel="canonical" href="{{ .Permalink }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ "index.xml" | absURL }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
 <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+{{ $profile := hugo.Data.sidebar.profile }}
+{{ $sameAs := slice }}
+{{ range $profile.links }}{{ $sameAs = $sameAs | append .url }}{{ end }}
+<script type="application/ld+json">{{ dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" $profile.name
+  "jobTitle" $profile.title
+  "url" site.BaseURL
+  "image" ($profile.avatar | absURL)
+  "description" site.Params.description
+  "sameAs" $sameAs
+| jsonify }}</script>
 {{ with resources.Get "js/theme-scheme.js" }}
   {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
   {{ with . | js.Build $opts }}
