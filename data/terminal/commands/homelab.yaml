@@ -5,19 +5,22 @@ quick: false
 weight: 61
 host:
   os: Unraid
-  uptime: ""    # e.g. "87 days", leave empty to hide
+  uptime: "6 days"
   network: everything through pangolin · 0 ports exposed
 services:
-  # Edit with your real containers.
+  # Real containers on the Unraid box.
   - name: adguard
     image: adguard/adguardhome
-    status: Up (healthy)
-  - name: homeassistant
-    image: home-assistant
-    status: Up (healthy)
-  - name: jellyfin
-    image: jellyfin/jellyfin
     status: Up
-  - name: ets2-server
-    image: ets2-dedicated
+  - name: adguardhome-sync
+    image: linuxserver/adguardhome-sync
+    status: Up
+  - name: pangolin-newt
+    image: fosrl/newt
+    status: Up
+  - name: jellyfin
+    image: linuxserver/jellyfin
+    status: Up
+  - name: EuroTruckSimulator2
+    image: ich777/steamcmd:ets2
     status: Up
