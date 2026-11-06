@@ -1,0 +1,7 @@
+# Vulnerability disclosure for www.timv.online
+# If you found something, thank you. Please report it privately and give
+# me time to fix it before going public.
+
+Contact: https://www.linkedin.com/in/timvnl
+Preferred-Languages: en, nl
+Canonical: https://www.timv.online/.well-known/security.txt
