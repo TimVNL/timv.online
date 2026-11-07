@@ -4,7 +4,7 @@ Tim Veluwenkamp's personal site.
 
 ## Rules
 
-- Never push to main. Work on a branch and open a pull request; merging to main publishes the site via GitHub Actions.
+- Agents never push. Commit changes locally and leave the push to Tim; he checks every change by hand before it goes to GitHub. Pushing to main publishes the site via GitHub Actions.
 - deploy/publish.sh is the single build-and-rsync script; the workflow runs it on push to main, Tim can run it by hand. Server details live in GitHub secrets or deploy/config.sh, never in the repo.
 - This repo is public. Never commit anything private: no client names, booking links, private email addresses, tokens, or server details beyond what is already here.
 - Do not invent facts or copy in Tim's voice. Everything that is here comes from Tim. If something is missing, ask or leave it out.

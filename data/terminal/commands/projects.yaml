@@ -12,6 +12,14 @@ items:
       - Hypernode
     description: "Drop-in policies for Hypernode's BotStopper: keep the bots out, let the humans in."
     url: https://github.com/TimVNL/hypernode-botstopper-policies
+  - name: Hypernode Documentation
+    type: Open Source
+    role: Ongoing · Maintainer
+    tech:
+      - Python
+      - SCSS
+    description: The public documentation for the Hypernode platform. I help maintain it.
+    url: https://github.com/ByteInternet/hypernode-docs-next
   - name: nix-darwin
     type: Open Source
     role: Ongoing · Maintainer

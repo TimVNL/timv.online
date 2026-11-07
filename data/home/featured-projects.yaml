@@ -2,6 +2,7 @@ id: featured-projects
 type: projects
 icon: code
 title: Projects
+featuredLimit: 6
 items:
   - title: hypernode-botstopper-policies
     role: Ongoing · Maintainer
@@ -19,6 +20,21 @@ items:
         url: https://docs.hypernode.com/hypernode-platform/botstopper/how-to-use-botstopper.html
         icon: document
     stars: 1
+  - title: Hypernode Documentation
+    role: Ongoing · Maintainer
+    description: "The public documentation for the Hypernode platform: articles, how-tos, and the tooling that builds them. I help maintain it."
+    tech:
+      - Python
+      - SCSS
+    accent: cyan
+    type: Open Source
+    links:
+      - label: Repo
+        url: https://github.com/ByteInternet/hypernode-docs-next
+        icon: github
+      - label: Docs
+        url: https://docs.hypernode.com
+        icon: website
   - title: nix-darwin
     role: Ongoing · Maintainer
     description: Minimal nix-darwin setup for macOS, safe to deploy on a fresh install.
@@ -31,6 +47,39 @@ items:
       - label: Code
         url: https://github.com/TimVNL/nix-darwin
         icon: github
+  - title: RocaNLD
+    role: Ongoing · Webmaster
+    description: "WordPress site I built for my mom's hobby: painted stones traveling the world. Did you find one?"
+    tech:
+      - WordPress
+      - Hypernode Hosted
+    accent: cyan
+    type: Websites
+    links:
+      - label: Visit
+        url: https://www.rocanld.com/
+        icon: website
+  - title: Arnhemse Antilope
+    role: Ongoing · Webmaster
+    description: Website for my manual wheelchair hockey club, the Arnhemse Antilope.
+    tech:
+      - WordPress
+      - Hypernode Hosted
+    accent: cyan
+    type: Websites
+    links:
+      - label: Visit
+        url: https://www.arnhemseantilope.nl/
+        icon: website
+  - title: CloudFabrik VTC
+    role: Ongoing
+    description: My virtual trucking company on TruckyApp.
+    accent: emerald
+    type: Miscellaneous
+    links:
+      - label: TruckyHub
+        url: https://hub.truckyapp.com/company/23848
+        icon: external
   - title: traefik-sample
     role: 2025
     description: Simple Traefik setup with wildcard certificate support.
@@ -66,18 +115,6 @@ items:
       - label: Code
         url: https://github.com/TimVNL/dirbak
         icon: github
-  - title: RocaNLD
-    role: Ongoing · Webmaster
-    description: "WordPress site I built for my mom's hobby: painted stones traveling the world. Did you find one?"
-    tech:
-      - WordPress
-      - Hypernode Hosted
-    accent: cyan
-    type: Websites
-    links:
-      - label: Visit
-        url: https://www.rocanld.com/
-        icon: website
   - title: MTC Dalfsen
     role: Ongoing · Webmaster
     description: WordPress site for the local motor club MTC Dalfsen, day and multi-day motorcycle tours since 1987.
@@ -89,27 +126,6 @@ items:
       - label: Visit
         url: https://mtcdalfsen.nl/
         icon: website
-  - title: Arnhemse Antilope
-    role: Ongoing · Webmaster
-    description: Website for my manual wheelchair hockey club, the Arnhemse Antilope.
-    tech:
-      - WordPress
-      - Hypernode Hosted
-    accent: cyan
-    type: Websites
-    links:
-      - label: Visit
-        url: https://www.arnhemseantilope.nl/
-        icon: website
-  - title: CloudFabrik VTC
-    role: Ongoing
-    description: My virtual trucking company on TruckyApp.
-    accent: emerald
-    type: Miscellaneous
-    links:
-      - label: TruckyHub
-        url: https://hub.truckyapp.com/company/23848
-        icon: external
   - title: NoXqs Client Work
     role: Programmer & System Administrator · 2011–2017
     description: Client web projects at NoXqs B.V. (2011–2017), development plus the systems behind them.

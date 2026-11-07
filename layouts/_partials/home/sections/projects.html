@@ -1,0 +1,37 @@
+{{- $limit := int (.featuredLimit | default 6) -}}
+{{- $items := .items | default slice -}}
+{{- $featured := first $limit $items -}}
+{{- $rest := after $limit $items -}}
+<section class="mt-4" id="{{ .id }}">
+  {{ partial "components/section-heading.html" (dict "icon" .icon "title" .title "prefix" "<<" "suffix" ">>") }}
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+    {{ range $featured }}
+      {{ partial "home/cards/project.html" . }}
+    {{ end }}
+  </div>
+  {{ with $rest }}
+    {{ $moreLabel := "▸ click for more, or type 'projects' in the terminal" }}
+    {{ $lessLabel := "▾ less" }}
+    <div x-data='{{ jsonify (dict "open" false "moreLabel" $moreLabel "lessLabel" $lessLabel) }}' class="mt-4">
+      <div class="mb-4 font-mono text-xs">
+        <button
+          type="button"
+          class="nerdy-muted-soft transition-colors hover:text-accent-cyan"
+          @click="open = !open"
+          aria-expanded="false"
+          :aria-expanded="open ? 'true' : 'false'"
+        ><span x-text="open ? lessLabel : moreLabel"></span></button>
+      </div>
+      <template x-if="open">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          {{ range $rest }}
+            {{ partial "home/cards/project.html" . }}
+          {{ end }}
+        </div>
+      </template>
+    </div>
+  {{ end }}
+  {{ with .footer }}
+    <p class="mt-4 font-mono text-xs nerdy-muted-soft">{{ . }}</p>
+  {{ end }}
+</section>

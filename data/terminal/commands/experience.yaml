@@ -10,6 +10,7 @@ roles:
     highlights:
       - Support for Hypernode, a leading e-commerce hosting platform (team.blue).
       - "Zero-day incident response with the Hypernode team: StyleSmuggler (CVE-2026-75650), PHP2Shell (CVE-2026-109618/109619), APSB26-92."
+      - Help maintain the public Hypernode documentation at docs.hypernode.com.
       - CVE incident communication to merchants, developers, and agencies, from first alert to all-clear, together with the support team.
   - title: Linux Engineer
     company: Proserve (team.blue), Arnhem
