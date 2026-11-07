@@ -7,6 +7,12 @@ featuredLimit: 5
 lookbackDays: 730
 includePosts: false
 items:
+  - activityDate: 2026-10-31
+    type: event
+    info:
+      label: October screen time
+      url: https://app.trakt.tv/users/timvnl/mir/2026/10
+      text: "178 plays and 78 hours across 9 shows and 6 movies on Trakt"
   - activityDate: 2026-10-21
     type: event
     info:

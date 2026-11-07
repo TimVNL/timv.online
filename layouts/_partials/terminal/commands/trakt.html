@@ -1,14 +1,27 @@
 {{- $profile := .profile | default dict -}}
 {{- $stats := .stats | default dict -}}
+{{- $months := .months | default slice -}}
+{{- $genres := .genres | default slice -}}
 {{- $favorites := .favorites | default slice -}}
 {{- $user := $profile.user | default "timvnl" -}}
 {{- $url := $profile.url | default "https://trakt.tv/users/timvnl" -}}
+{{- $max := 1 -}}
+{{- range $m := $months -}}
+  {{- if gt $m.plays $max -}}{{- $max = $m.plays -}}{{- end -}}
+{{- end -}}
 <pre class="font-mono whitespace-pre-wrap leading-relaxed"><span class="text-accent-cyan font-bold">trakt</span> <span class="nerdy-muted-soft">--stats --user</span> <a class="pointer-events-auto relative z-50 nerdy-link underline" href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ $user }}</a>
 
+  <span class="text-accent-purple">plays</span>     {{ $stats.plays | default 0 }}
+  <span class="text-accent-purple">hours</span>     {{ $stats.hours | default 0 }}
   <span class="text-accent-purple">movies</span>    {{ $stats.movies | default 0 }}
   <span class="text-accent-purple">shows</span>     {{ $stats.shows | default 0 }}
-  <span class="text-accent-purple">episodes</span>  {{ $stats.episodes | default 0 }}{{ with $stats.watchtime }}
-  <span class="text-accent-purple">watchtime</span> <span class="text-accent-amber">{{ . }}</span>{{ end }}{{ with $profile.vip_since }}
-  <span class="text-accent-emerald">vip</span>       <span class="text-accent-emerald">since {{ . }}</span>{{ end }}{{ with $favorites }}
+  <span class="text-accent-purple">episodes</span>  {{ $stats.episodes | default 0 }}{{ with $genres }}
+  <span class="nerdy-muted-soft">genres</span>    {{ delimit . " · " }}{{ end }}{{ with $profile.vip_since }}
+  <span class="text-accent-purple">vip</span>       <span class="text-accent-emerald">since {{ . }}</span>{{ end }}{{ with $favorites }}
   <span class="nerdy-muted-soft">top picks</span>   {{ delimit . ", " }}{{ end }}
-  <span class="text-accent-emerald font-bold">status: watching</span></pre>
+  <span class="text-accent-emerald font-bold">status: watching</span>
+
+  <span class="nerdy-muted-soft">last 6 months</span>
+{{- range $m := $months }}
+  {{ printf "%-6s" $m.name }}<span class="text-accent-purple">{{ strings.Repeat (div (mul $m.plays 20) $max) "▇" }}</span> {{ $m.plays }}
+{{- end }}</pre>
