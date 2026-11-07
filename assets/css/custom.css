@@ -23,3 +23,82 @@
     scrollbar-width: thin;
   }
 }
+
+/* Catppuccin palette: full Latte in light mode, Frappé accents on deep surfaces in dark */
+:root {
+  --accent-cyan: #1e66f5;
+  --accent-purple: #8839ef;
+  --accent-emerald: #40a02f;
+  --accent-amber: #df8e1d;
+  --primary: #1e66f5;
+  --primary-foreground: #ffffff;
+  --background: #eff1f5;
+  --surface: #e6e9ef;
+  --surface-muted: #dce0e8;
+  --surface-elevated: #ffffff;
+  --card: #ffffff;
+  --muted: #ccd0da;
+  --muted-foreground: #6c6f85;
+  --foreground: #4c4f69;
+  --border: #bcc0cc;
+}
+
+.dark {
+  --accent-cyan: #8caaee;
+  --accent-purple: #ca9ee6;
+  --accent-emerald: #a6d189;
+  --accent-amber: #e5c890;
+  --primary: #8caaee;
+  --primary-foreground: oklch(0.145 0.008 275);
+  --background: oklch(0.145 0.008 275);
+  --surface: oklch(0.16 0.01 275);
+  --surface-muted: oklch(0.205 0.012 275);
+  --surface-elevated: oklch(0.23 0.012 275);
+  --card: oklch(0.205 0.012 275);
+  --muted: oklch(0.27 0.01 275);
+  --muted-foreground: oklch(0.68 0.008 275);
+  --foreground: oklch(0.93 0.008 275);
+}
+
+/* Soft grid pattern instead of the stock 20% dark-mode lines */
+.bg-grid,
+.nerdy-page-surface {
+  background-image:
+    linear-gradient(to right, rgb(100 116 139 / 4%) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(100 116 139 / 4%) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.dark .bg-grid,
+.dark .nerdy-page-surface {
+  background-image:
+    linear-gradient(to right, rgb(100 116 139 / 4%) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(100 116 139 / 4%) 1px, transparent 1px);
+}
+
+/* Quieter top glow and ambient background wash */
+.nerdy-top-glow {
+  background-color: color-mix(in oklab, var(--accent-cyan) 4%, transparent);
+}
+
+.nerdy-card-hover:hover {
+  box-shadow: 0 12px 32px rgb(15 23 42 / 12%);
+}
+
+.dark .nerdy-card-hover:hover {
+  box-shadow: 0 12px 32px rgb(0 0 0 / 45%);
+}
+
+.nerdy-ambient-bg {
+  background-image:
+    radial-gradient(circle at 50% 0%, rgb(100 116 139 / 5%), transparent 28rem),
+    radial-gradient(circle at 78% 12%, rgb(100 116 139 / 4%), transparent 30rem),
+    radial-gradient(circle at 16% 22%, rgb(100 116 139 / 3%), transparent 24rem);
+}
+
+.dark .nerdy-ambient-bg {
+  background-image:
+    radial-gradient(circle at 50% 0%, rgb(140 170 238 / 6%), transparent 28rem),
+    radial-gradient(circle at 78% 12%, rgb(140 170 238 / 4%), transparent 30rem),
+    radial-gradient(circle at 16% 22%, rgb(202 158 230 / 3%), transparent 24rem);
+}
