@@ -1,0 +1,5 @@
+name: tail
+label: Tail
+description: Recent entries from my log
+quick: true
+weight: 32

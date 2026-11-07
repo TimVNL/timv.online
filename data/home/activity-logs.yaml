@@ -3,6 +3,7 @@ type: activity
 icon: clock
 title: Activity Log
 activityLimit: 10
+featuredLimit: 5
 lookbackDays: 730
 includePosts: false
 items:

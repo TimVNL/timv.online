@@ -1,0 +1,93 @@
+{{- $dateFormat := .dateFormat | default "Jan 2, 2006" -}}
+{{- $lookbackDays := int (.lookbackDays | default 0) -}}
+{{- $activityLimit := int (.activityLimit | default 0) -}}
+{{- $includePosts := .includePosts | default false -}}
+{{- $postSection := .postSection | default "posts" -}}
+{{- $featuredLimit := int (.featuredLimit | default 0) -}}
+{{- $cutoffUnix := 0 -}}
+{{- if gt $lookbackDays 0 -}}
+  {{- $cutoffUnix = (now.AddDate 0 0 (mul $lookbackDays -1)).Unix -}}
+{{- end -}}
+
+{{- $activities := slice -}}
+{{- range $index, $item := (.items | default slice) -}}
+  {{- $rawActivityDate := $item.activityDate | default "" -}}
+  {{- if not $rawActivityDate -}}
+    {{- errorf "Activity item %d in %q requires activityDate." (add $index 1) $.id -}}
+  {{- end -}}
+
+  {{- $sortDate := time.AsTime $rawActivityDate -}}
+  {{- $dateLabel := $sortDate.Format $dateFormat -}}
+  {{- $datetime := $sortDate.Format "2006-01-02" -}}
+  {{- $sortKey := sub (mul $sortDate.Unix 100000) $index -}}
+
+  {{- $includeItem := true -}}
+  {{- if gt $lookbackDays 0 -}}
+    {{- $includeItem = false -}}
+    {{- if and $sortDate (ge $sortDate.Unix $cutoffUnix) -}}
+      {{- $includeItem = true -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if $includeItem -}}
+    {{- $activities = $activities | append (merge $item (dict "dateLabel" $dateLabel "datetime" $datetime "sortKey" $sortKey)) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $includePosts -}}
+  {{- range $index, $post := (where site.RegularPages "Section" $postSection).ByDate.Reverse -}}
+    {{- if not $post.Date.IsZero -}}
+      {{- $includePost := true -}}
+      {{- if and (gt $lookbackDays 0) (lt $post.Date.Unix $cutoffUnix) -}}
+        {{- $includePost = false -}}
+      {{- end -}}
+
+      {{- if $includePost -}}
+        {{- $activities = $activities | append (dict
+          "dateLabel" ($post.Date.Format $dateFormat)
+          "datetime" ($post.Date.Format "2006-01-02")
+          "info" (dict "page" $post "section" $postSection "title" $post.Title "url" $post.RelPermalink)
+          "sortKey" (sub (mul $post.Date.Unix 100000) (add $index 10000))
+          "type" "published-post"
+        ) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $visibleActivities := sort $activities "sortKey" "desc" -}}
+{{- if gt $activityLimit 0 -}}
+  {{- $visibleActivities = first $activityLimit $visibleActivities -}}
+{{- end -}}
+
+{{- $featured := $visibleActivities -}}
+{{- $rest := slice -}}
+{{- if gt $featuredLimit 0 -}}
+  {{- $featured = first $featuredLimit $visibleActivities -}}
+  {{- $rest = after $featuredLimit $visibleActivities -}}
+{{- end -}}
+
+<section class="mb-4 mt-8" id="{{ .id }}">
+  {{ partial "components/section-heading.html" (dict "icon" .icon "title" .title "prefix" "<<" "suffix" ">>") }}
+  {{ partial "home/activity/timeline.html" (dict "activities" $featured "glow" true) }}
+  {{ with $rest }}
+    {{ $moreLabel := "▸ click for more, or type 'tail' in the terminal" }}
+    {{ $lessLabel := "▾ less" }}
+    <div x-data='{{ jsonify (dict "open" false "moreLabel" $moreLabel "lessLabel" $lessLabel) }}' class="mt-4">
+      <div class="mb-4 font-mono text-xs">
+        <button
+          type="button"
+          class="nerdy-muted-soft transition-colors hover:text-accent-cyan"
+          @click="open = !open"
+          aria-expanded="false"
+          :aria-expanded="open ? 'true' : 'false'"
+        ><span x-text="open ? lessLabel : moreLabel"></span></button>
+      </div>
+      <template x-if="open">
+        <div>
+          {{ partial "home/activity/timeline.html" (dict "activities" $rest "glow" false) }}
+        </div>
+      </template>
+    </div>
+  {{ end }}
+</section>

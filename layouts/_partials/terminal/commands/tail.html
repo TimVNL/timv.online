@@ -1,0 +1,6 @@
+{{- $log := index hugo.Data.home "activity-logs" -}}
+{{- $items := $log.items | default slice -}}
+{{- $sorted := sort $items "activityDate" "asc" -}}
+<pre class="font-mono whitespace-pre-wrap leading-relaxed"><span class="text-accent-cyan font-bold">tail</span> <span class="nerdy-muted-soft">-n 20 /var/log/tim.log</span>
+{{ range $item := $sorted }}{{ $item.activityDate }}  {{ with $item.info.url }}<a class="pointer-events-auto relative z-50 nerdy-link underline" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $item.info.label }}</a>{{ else }}{{ $item.info.label }}{{ end }}
+{{ end }}</pre>
