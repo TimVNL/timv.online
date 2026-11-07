@@ -1,0 +1,26 @@
+name: man
+label: Man
+description: The manual page for Tim
+quick: false
+weight: 12
+title: "TIM(1)                     User Commands                    TIM(1)"
+sections:
+  - name: NAME
+    lines:
+      - "tim - Support Engineer (Hypernode, Arnhem)"
+  - name: SYNOPSIS
+    lines:
+      - "tim [--coffee] [--ship] [--solve]"
+  - name: DESCRIPTION
+    lines:
+      - "Turns complex issues into simple, reliable solutions."
+      - "Automates, documents, and fine-tunes Linux systems so they"
+      - "stay smooth, secure, and scalable."
+  - name: OPTIONS
+    lines:
+      - "--coffee    required flag, always on"
+      - "--ship      ships the fix"
+      - "--solve     solves the unsolvable"
+  - name: BUGS
+    lines:
+      - "Probably the cause. See uptime."

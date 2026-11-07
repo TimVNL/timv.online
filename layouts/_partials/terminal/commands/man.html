@@ -1,0 +1,6 @@
+{{- $sections := .sections | default slice -}}
+<pre class="font-mono whitespace-pre-wrap leading-relaxed">{{ .title }}
+{{ range $s := $sections }}<span class="text-accent-cyan font-bold">{{ $s.name }}</span>
+{{ range $s.lines }}     {{ . }}
+{{ end }}
+{{ end }}<span class="nerdy-muted-soft">TimVNL                    {{ now.Format "2006-01-02" }}                    TIM(1)</span></pre>

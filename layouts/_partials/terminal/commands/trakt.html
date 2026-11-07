@@ -17,7 +17,8 @@
   <span class="text-accent-purple">shows</span>     {{ $stats.shows | default 0 }}
   <span class="text-accent-purple">episodes</span>  {{ $stats.episodes | default 0 }}{{ with $genres }}
   <span class="nerdy-muted-soft">genres</span>    {{ delimit . " · " }}{{ end }}{{ with $profile.vip_since }}
-  <span class="text-accent-purple">vip</span>       <span class="text-accent-emerald">since {{ . }}</span>{{ end }}{{ with $favorites }}
+  <span class="text-accent-purple">vip</span>       <span class="text-accent-emerald">since {{ . }}</span>{{ end }}{{ with $profile.member_since }}
+  <span class="text-accent-purple">member</span>    <span class="text-accent-emerald">since {{ . }}</span>{{ end }}{{ with $favorites }}
   <span class="nerdy-muted-soft">top picks</span>   {{ delimit . ", " }}{{ end }}
   <span class="text-accent-emerald font-bold">status: watching</span>
 
