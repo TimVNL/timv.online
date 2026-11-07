@@ -2,7 +2,7 @@
 
 Source of [www.timv.online](https://www.timv.online), Tim Veluwenkamp's personal site.
 
-Built with Hugo and the [nerdy](https://github.com/hugo-themes/nerdy) theme. The home page is a terminal: visitors type commands like `about`, `skills`, `homelab`, and `trakt`. Content lives in data files, not markdown posts.
+Built with Hugo and the [nerdy](https://github.com/hugo-themes/nerdy) theme. The home page is a terminal: visitors type commands like `about`, `skills`, `homelab`, `tail`, and `man`. Content lives in data files, not markdown posts.
 
 ## Requirements
 
@@ -26,7 +26,13 @@ Production build: `npm run build`
 - `data/` holds all visible content: `sidebar.yaml`, `home/*.yaml`, and `terminal/commands/*.yaml`
 - `layouts/` contains only overrides of theme partials; the theme supplies the rest
 - A terminal command needs both a YAML file in `data/terminal/commands/` and a partial in `layouts/_partials/terminal/commands/`
+- The Activity Log section and the `tail` command both read `data/home/activity-logs.yaml`; add an entry once and it appears in both
+- The Projects grid and the Activity Log show a visible subset (`featuredLimit` in their data files); the rest expand behind the more/less toggle
 - The theme is a git submodule and is never edited
+
+## Design
+
+The palette is [Catppuccin](https://catppuccin.com/): Latte for light mode, Frappé accents on deep tinted surfaces for dark. It lives entirely in `assets/css/custom.css` as CSS variable overrides, so the theme stays untouched. New components should use the variables (`--accent-*`, `--background`, `--surface`, `--card`) rather than hardcoded colors, because the theme hardcodes slate in places and copied classes drift from the palette.
 
 ## Deploying
 
