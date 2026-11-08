@@ -5,12 +5,13 @@ quick: true
 weight: 10
 greeting: Hello, World!
 person_name: "Tim Veluwenkamp"
-summary: I've been passionate about creating and improving things for as long as I can remember.
+summary: Support Engineer at Hypernode by day, homelab admin and virtual trucker after hours.
 details:
-  - My tech journey started at 11 when I built my first website using Microsoft FrontPage.
-  - Since then, I've evolved from IT Assistant and Programmer to a Support Engineer for a leading e-commerce hosting company.
-  - Every day, I bring a smile to problem-solving, ensuring clients get the best solutions for their hosting needs.
-  - Colleagues would add punctuality, social skills and adaptability to that list.
+  - My tech journey started at 11 with my first website, built in Microsoft FrontPage.
+  - First jobs: ICT support in education, then programmer and system administrator at NoXqs from 2011 to 2017.
+  - Hosting came next: iXL Hosting, then Proserve, from technical support in 2018 to Linux engineering.
+  - Since September 2025 I'm a Support Engineer at Hypernode in Arnhem: platform support, documentation at docs.hypernode.com, and incident communication to merchants, developers, and agencies when a zero-day lands.
+  - Off the clock I run an Unraid homelab, maintain WordPress sites for family and clubs, and haul virtual freight in Euro Truck Simulator 2.
 quote:
-  text: Talk is cheap. Show me the code.
-  author: Linus Torvalds
+  text: Have you tried turning it off and on again?
+  author: "Roy, The IT Crowd"
