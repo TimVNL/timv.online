@@ -7,11 +7,13 @@ greeting: Hello, World!
 person_name: "Tim Veluwenkamp"
 summary: Support Engineer at Hypernode by day, homelab admin and virtual trucker after hours.
 details:
-  - My tech journey started at 11 with my first website, built in Microsoft FrontPage.
-  - First jobs: ICT support in education, then programmer and system administrator at NoXqs from 2011 to 2017.
-  - Hosting came next: iXL Hosting, then Proserve, from technical support in 2018 to Linux engineering.
-  - Since September 2025 I'm a Support Engineer at Hypernode in Arnhem: platform support, documentation at docs.hypernode.com, and incident communication to merchants, developers, and agencies when a zero-day lands.
-  - Off the clock I run an Unraid homelab, maintain WordPress sites for family and clubs, and haul virtual freight in Euro Truck Simulator 2.
+  - "It all started at 11: a Microsoft FrontPage website. The hobby never crashed."
+  - ICT support at schools, then programmer and sysadmin at NoXqs (2011-2017).
+  - "iXL Hosting, then Proserve: support 2018, Linux engineering 2022, root included."
+  - Since September 2025 I keep e-commerce online at Hypernode, one ticket at a time.
+  - "I help maintain docs.hypernode.com: 90% documentation, 10% caffeine."
+  - "When a zero-day lands, I write the comms to merchants, developers, and agencies."
+  - "Off the clock: Unraid homelab, WordPress sites for family and clubs, ETS2 freight."
 quote:
   text: Have you tried turning it off and on again?
   author: "Roy, The IT Crowd"

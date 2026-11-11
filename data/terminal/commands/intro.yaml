@@ -4,7 +4,8 @@ description: Quick introduction
 quick: true
 weight: 5
 person_name: "Tim Veluwenkamp"
-role: a Support Engineer at Hypernode, an e-commerce hosting platform in Arnhem.
+role: a Support Engineer at Hypernode, an e-commerce hosting platform.
 details:
-  - I automate, document, and fine-tune Linux systems, and when a zero-day hits, I write the incident updates, from first alert to all-clear.
-  - Off-hours, I unwind with Euro Truck Simulator, my homelab, and the occasional coffee-fueled code experiment.
+  - I automate, document, and fine-tune Linux systems.
+  - When a zero-day hits, I write the incident updates, from first alert to all-clear.
+  - "Off-hours: Euro Truck Simulator, my homelab, and coffee-fueled code experiments."
