@@ -7,6 +7,12 @@ featuredLimit: 5
 lookbackDays: 730
 includePosts: false
 items:
+  - activityDate: 2026-11-11
+    type: event
+    info:
+      label: AbuseIPDB contributor
+      url: https://www.abuseipdb.com/
+      text: started reporting malicious IPs to AbuseIPDB
   - activityDate: 2026-10-31
     type: event
     info:
