@@ -1,0 +1,7 @@
+<pre class="font-mono whitespace-pre-wrap leading-relaxed"><span class="text-accent-purple">{{ .greeting }}</span> I'm <span class="font-bold text-accent-emerald">{{ .person_name }}</span>.
+<span class="nerdy-muted-soft">{{ .summary }}</span>
+
+{{ range .details }}<span class="text-accent-amber">-</span> {{ . }}
+{{ end }}{{ with .quote }}
+&gt; <span class="italic nerdy-muted-soft">"{{ .text }}"{{ with .author }} - {{ . }}{{ end }}</span>
+{{ end }}</pre>

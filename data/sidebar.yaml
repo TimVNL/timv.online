@@ -10,6 +10,9 @@ profile:
     - icon: github
       label: github.com/timvnl
       url: https://github.com/timvnl
+    - icon: abuseipdb
+      label: abuseipdb.com/user/371822
+      url: https://www.abuseipdb.com/user/371822
 
 sections:
   - id: profile-stats
@@ -17,7 +20,7 @@ sections:
     title: Profile Stats
     items:
       - label: Role
-        value: Support Engineer
+        value: Support Engineer @ Hypernode
         accent: cyan
       - label: Focus
         value: Linux & Automation

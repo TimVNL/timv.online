@@ -7,7 +7,7 @@ disableKinds:
   - term
 
 params:
-  description: "Support Engineer who turns complex issues into simple, reliable solutions. I automate, document, and fine-tune Linux systems so they stay smooth, secure, and scalable."
+  description: "Support Engineer at Hypernode, an e-commerce hosting platform. I automate, document, and fine-tune Linux systems, and I write the incident updates when a zero-day hits."
 
 markup:
   tableOfContents:
