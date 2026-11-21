@@ -22,6 +22,12 @@ items:
   - activityDate: 2026-11-11
     type: event
     info:
+      label: nerdy theme vulnerability report
+      url: https://github.com/hugo-themes/nerdy/issues/8
+      text: reported a vulnerable postcss-selector-parser dependency via @tailwindcss/typography in the nerdy theme, closed as fixed three days later
+  - activityDate: 2026-11-11
+    type: event
+    info:
       label: AbuseIPDB contributor
       url: https://www.abuseipdb.com/user/371822
       text: started reporting malicious IPs to AbuseIPDB

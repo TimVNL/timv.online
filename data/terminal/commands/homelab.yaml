@@ -6,20 +6,26 @@ weight: 61
 host:
   os: Unraid
   uptime: "6 days"
-  network: everything through pangolin · 0 ports exposed
+  network: external traffic through pangolin on an external vps · LAN through swag-proxy · 0 ports exposed to the internet
 services:
   # Real containers on the Unraid box.
-  - name: adguard
-    image: adguard/adguardhome
-    status: Up
-  - name: adguardhome-sync
-    image: linuxserver/adguardhome-sync
+  - name: technitium-dns
+    image: technitiumdns/dns-server
     status: Up
   - name: pangolin-newt
     image: fosrl/newt
     status: Up
   - name: jellyfin
     image: linuxserver/jellyfin
+    status: Up
+  - name: mealie
+    image: ghcr.io/mealie-recipes/mealie
+    status: Up
+  - name: ntfy
+    image: binwiederhier/ntfy
+    status: Up
+  - name: swag-proxy
+    image: linuxserver/swag
     status: Up
   - name: EuroTruckSimulator2
     image: ich777/steamcmd:ets2
