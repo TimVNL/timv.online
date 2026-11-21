@@ -7,6 +7,18 @@ featuredLimit: 5
 lookbackDays: 730
 includePosts: false
 items:
+  - activityDate: 2026-11-19
+    type: event
+    info:
+      label: PHP security release rollout
+      url: https://www.hypernode-status.com/incidents/1d3kf0s8jp3g
+      text: kept merchants, developers, and agencies informed as patched PHP versions were rolled out to all Hypernodes the same day the PHP project published its security releases, with brief Nginx and PHP restarts during the rollout
+  - activityDate: 2026-11-18
+    type: event
+    info:
+      label: NGINX2Root security update
+      url: https://www.linkedin.com/posts/hypernodecom_hypernode-nginx-security-activity-7528859539438329859-SLo8
+      text: "kept merchants, developers, and agencies informed as critical NGINX vulnerabilities (NGINX2Root: CVE-2026-123007, -123634, -123633, -121810, -113425) were disclosed, with mitigations rolled out platform-wide and HTTP/2 temporarily disabled until targeted patches landed the next day"
   - activityDate: 2026-11-11
     type: event
     info:
